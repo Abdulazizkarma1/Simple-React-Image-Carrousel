@@ -1,0 +1,68 @@
+body {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  margin: 4rem;
+}
+.header_title {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  background-color: green;
+  color: #fff;
+}
+.image_caroussel_section {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.btn_for_previous button,
+.btn_for_next button {
+  font-size: 1.5rem;
+  /* background-color: gray; */
+  /* color: #fff; */
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 3rem;
+}
+img {
+  width: 500px;
+}
+.btn_for_previous,
+.btn_for_next {
+  display: flex;
+  align-items: center;
+}
+.image_end {
+  background-color: red;
+  cursor: not-allowed;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    margin: 2rem;
+  }
+  .header_title {
+    justify-content: center;
+    font-size: 10px;
+  }
+  .image_caroussel_section {
+    margin: 1rem;
+    justify-content: center;
+  }
+  .btn_for_previous p,
+  .btn_for_next p {
+    font-size: 1rem;
+    background-color: gray;
+    padding: 0.5rem 1.5rem;
+  }
+  img {
+    width: 300px;
+  }
+}
